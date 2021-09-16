@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url(img/11.png);
+  margin: auto;
+  padding: 7px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0px 1px 10px 1px #000;
+  display: grid;
+  grid-template-areas:
+    "photo photo nama"
+    "skill skill about"
+    "skill skill motivasi"
+    "footer footer footer";
+  grid-template-columns: 0.5fr 0.5fr 2fr;
+  grid-template-rows: 0.5fr 1.3fr 1fr auto;
+}
+
+.item-1 {
+  grid-area: photo;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.item-1 img {
+  width: 60%;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: rgb(114, 108, 108);
+}
+
+.item-2 {
+  grid-area: nama;
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.item-2 header {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+.item-2 p {
+  font-family: "New Century Schoolbook";
+  font-size: 20px;
+}
+.item-3 {
+  padding: 30px 0;
+  grid-area: skill;
+  display: grid;
+  text-align: center;
+}
+
+.item-3 h3 {
+  margin: auto;
+  padding: 10px 0;
+}
+.skill {
+  list-style: none;
+  margin: auto;
+}
+.skill img {
+  width: 40%;
+  padding: 5px 0;
+}
+
+.item-4 {
+  grid-area: about;
+  text-align: center;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+.item-4 p {
+  font-family: "New Century Schoolbook";
+}
+.item-5 {
+  grid-area: motivasi;
+  margin: auto;
+  text-align: center;
+  padding: 0px 10px;
+}
+.item-6 {
+  grid-area: footer;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.item-6 .contact {
+  padding-top: 20px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+.item-6 img {
+  width: 40px;
+}
+@media (min-width: 670px) {
+  .container {
+    width: 670px;
+  }
+}
